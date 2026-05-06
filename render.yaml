@@ -1,0 +1,16 @@
+# Optional: connect this repo in Render → New → Blueprint to provision the API.
+# Set secrets (FIREBASE_SERVICE_ACCOUNT_JSON, GROQ_API_KEY, FRONTEND_URL, etc.) in the Render dashboard.
+version: "1"
+services:
+  - type: web
+    name: rooman-api
+    runtime: node
+    plan: free
+    region: oregon
+    rootDir: backend
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: "20.18.0"

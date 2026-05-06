@@ -1,0 +1,9 @@
+{
+  "name": "resume-builder-monorepo",
+  "private": true,
+  "scripts": {
+    "lint": "npm run lint --prefix frontend && npm run lint --prefix backend",
+    "build": "npm run build --prefix frontend && npm run build --prefix backend",
+    "check": "npm run lint && npm run build"
+  }
+}

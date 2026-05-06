@@ -1,0 +1,23 @@
+# Dependencies & build output
+node_modules/
+dist/
+*.log
+
+# Environment & secrets (never commit real keys; *.example files stay tracked)
+.env
+.env.local
+.env.*.local
+
+# Firebase / GCP service account keys
+serviceAccount*.json
+firebase-adminsdk*.json
+*-firebase-adminsdk-*.json
+
+# OS / editor
+.DS_Store
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
