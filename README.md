@@ -1,4 +1,6 @@
-# AI-Powered Resume Builder
+# rooman internship
+
+AI-Powered Resume Builder with Role-Specific Content Suggestions
 
 Full-stack app with a **React (Vite) + TypeScript** frontend, **Express + TypeScript** backend, **Firebase Authentication** and **Firestore** for per-user resumes, and **LLM-backed suggestions** (via the backend) using **Groq** and/or **OpenAI**. API keys never go to the browser.
 
