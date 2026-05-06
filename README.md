@@ -31,8 +31,8 @@ Full-stack app with a **React (Vite) + TypeScript** frontend, **Express + TypeSc
 
 **Backend** — copy `backend/.env.example` → `backend/.env`:
 
-- `GROQ_API_KEY` and/or `OPENAI_API_KEY` (see prerequisites for precedence).
-- Optional: `GROQ_MODEL`, `OPENAI_MODEL`, `LLM_PROVIDER` (`groq` | `openai`), `OPENAI_RATE_LIMIT_RETRIES`.
+- `GROQ_API_KEY`  (see prerequisites for precedence).
+- Optional: `GROQ_MODEL`, `LLM_PROVIDER`  
 - `FIREBASE_SERVICE_ACCOUNT_PATH` or `FIREBASE_SERVICE_ACCOUNT_JSON`.
 - `FRONTEND_URL` — must match your frontend origin for CORS (default `http://localhost:5173` for local dev).
 
@@ -104,7 +104,7 @@ If the provider returns HTTP **429**, wait before retrying; free Groq tiers have
 
 Listing resumes uses `orderBy('updatedAt', 'desc')`. If Firestore asks for a composite index, follow the link in the browser console or create a single-field index on `updatedAt` under the `resumes` subcollection scope.
 
-## Deploy: Render (API) + Vercel (frontend)
+## Deploy: Render (API) + Vercel (frontend) in future
 
 Deploy order: **Render first** (get the public API URL), then **Vercel** (point the app at that API).
 
